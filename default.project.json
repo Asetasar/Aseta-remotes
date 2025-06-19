@@ -1,0 +1,27 @@
+{
+  "name": "Aseta-remotes",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$path": "src/StarterPlayerScripts",
+    
+      "AsetaRemotes": {
+        "$path": "src/AsetaRemotes.lua",
+  
+        "Runtimes": {
+          "$path": "src/Runtimes"
+        },
+        "Dependencies": {
+          "$path": "src/Dependencies"
+        },
+        "MasterRemote": {
+          "$className": "RemoteEvent"
+        },
+        "UnreliableMasterRemote": {
+          "$className": "RemoteEvent"
+        }
+      }
+    }
+  }
+}
