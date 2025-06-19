@@ -8,5 +8,4 @@ local passThroughDict = {
     UnreliableRemote = script:WaitForChild("UnreliableMasterRemote")
 }
 
-print(passThroughDict)
 return require(`@self/Runtimes/{runtimeType}`):Load(passThroughDict)
