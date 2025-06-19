@@ -38,6 +38,10 @@ function serverRuntimeHolder:FireAllClientsUnreliable(...)
     self._UnreliableRemote:FireClient(self._RemoteIndex, ...)
 end
 
+function serverRuntimeHolder:FireSelf(...)
+    self.OnServerEvent:Fire(...)
+end
+
 function serverRuntime.New(eventIndex)
     _assert.String(eventIndex)
 

@@ -28,6 +28,10 @@ function clientRuntimeHolder:FireServerUnreliable(...)
     self._UnreliableRemote:FireServer(self.RemoteIndex, ...)
 end
 
+function clientRuntimeHolder:FireSelf(...)
+    self.OnClientEvent:Fire(...)
+end
+
 --// Aseta-remote has cool "feature" where it doesn't even need to know if said remote exists,
 --// Because server and client will recieve data they want to recieve while ignoring unwanted ones.
 
